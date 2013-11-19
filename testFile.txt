@@ -1,0 +1,296 @@
+Script started on Mon 24 Jun 2013 06:18:38 PM CDT
+m[?1034hbash-4.1$ m[K./myshell
+myshell> ls -lsFd
+1 drwxr-xr-x. 3 cal0018 ugrad 1024 Jun 24 18:18 ./
+myshell> ls -lf F
+total 233
+drwxr-xr-x. 2 cal0018 ugrad    96 Jun 24 17:06 cse3500test/
+-rwxr-xr-x. 1 cal0018 ugrad 10409 Jun 24 18:17 myshell*
+-rw-r--r--. 1 cal0018 ugrad  5156 Jun 24 18:16 myshell.c
+-rw-r--r--. 1 cal0018 ugrad   397 Jun 24 16:59 myshell.h
+-rw-r--r--. 1 cal0018 ugrad     0 Jun 24 18:18 testFile.txt
+-rw-r--r--. 1 cal0018 ugrad     0 Jun 24 17:04 testResults.txt
+myshell> who -as
+           system boot  2013-05-17 09:32
+           run-level 5  2013-05-17 09:32
+LOGIN      tty4         2013-05-17 09:32              8320 id=4
+LOGIN      tty2         2013-05-17 09:32              8316 id=2
+LOGIN      tty3         2013-05-17 09:32              8318 id=3
+LOGIN      tty6         2013-05-17 09:32              8324 id=6
+LOGIN      tty5         2013-05-17 09:32              8322 id=5
+szg0034  + pts/0        2013-06-24 14:45 03:33       17578 (ettin.eng.auburn.edu)
+           pts/1        2013-06-24 15:32             17990 id=ts/1  term=0 exit=0
+           tty7         2013-06-22 22:28             25766 id=:0    term=0 exit=0
+cal0018  + pts/2        2013-06-24 18:16   .         20575 (ettin.eng.auburn.edu)
+cal0018  + pts/3        2013-06-24 18:18   .         20620
+           pts/0        2013-06-22 22:28                 0 id=/0    term=0 exit=0
+myshell> whoami --version
+whoami (GNU coreutils) 8.4
+Copyright (C) 2010 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>.
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+
+Written by Richard Mlynarik.
+myshell> ls ue*hv       ue*hv@ccy#ky^hbg%
+ls: cannot access ue*hv@ccy#ky^hbg%: No such file or directory
+myshell> who ---h
+who: unrecognized option '---h'
+Try `who --help' for more information.
+myshell> mkdir cse3500test
+mkdir: cannot create directory `cse3500test': File exists
+myshell> mkdir -v
+mkdir: missing operand
+Try `mkdir --help' for more information.
+myshell> cd cse365  600   500
+Error: invalid command.
+myshell> mkdir -v misc
+mkdir: created directory `misc'
+myshell> ls -l
+total 233
+drwxr-xr-x. 2 cal0018 ugrad    96 Jun 24 17:06 cse3500test
+drwxr-xr-x. 2 cal0018 ugrad    96 Jun 24 18:20 misc
+-rwxr-xr-x. 1 cal0018 ugrad 10409 Jun 24 18:17 myshell
+-rw-r--r--. 1 cal0018 ugrad  5156 Jun 24 18:16 myshell.c
+-rw-r--r--. 1 cal0018 ugrad   397 Jun 24 16:59 myshell.h
+-rw-r--r--. 1 cal0018 ugrad     0 Jun 24 18:18 testFile.txt
+-rw-r--r--. 1 cal0018 ugrad     0 Jun 24 17:04 testResults.txt
+myshell> hostname
+tux194.eng.auburn.edu
+myshell> rmdir misc
+myshell> cd ..
+Error: invalid command.
+myshell> ls -lF
+total 233
+drwxr-xr-x. 2 cal0018 ugrad    96 Jun 24 17:06 cse3500test/
+-rwxr-xr-x. 1 cal0018 ugrad 10409 Jun 24 18:17 myshell*
+-rw-r--r--. 1 cal0018 ugrad  5156 Jun 24 18:16 myshell.c
+-rw-r--r--. 1 cal0018 ugrad   397 Jun 24 16:59 myshell.h
+-rw-r--r--. 1 cal0018 ugrad     0 Jun 24 18:18 testFile.txt
+-rw-r--r--. 1 cal0018 ugrad     0 Jun 24 17:04 testResults.txt
+myshell> mv cse36 500test comp3500test
+myshell> chmod o-rx comp3500test
+myshell> ls -sFt
+total 233
+ 32 testFile.txt  194 myshell*	  6 myshell.c    0 comp3500test/    0 testResults.txt    1 myshell.h
+myshell> print -l spectrum
+Error: invalid command.
+myshell> ifconfig
+eth0      Link encap:Ethernet  HWaddr A0:B3:CC:FC:85:6C  
+          inet addr:131.204.14.194  Bcast:131.204.14.255  Mask:255.255.255.0
+          inet6 addr: fe80::a2b3:ccff:fefc:856c/64 Scope:Link
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:25775272 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:16333641 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:7285976311 (6.7 GiB)  TX bytes:4026611455 (3.7 GiB)
+          Interrupt:20 Memory:fe400000-fe420000 
+
+lo        Link encap:Local Loopback  
+          inet addr:127.0.0.1  Mask:255.0.0.0
+          inet6 addr: ::1/128 Scope:Host
+          UP LOOPBACK RUNNING  MTU:16436  Metric:1
+          RX packets:15260660 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:15260660 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:0 
+          RX bytes:2597741144 (2.4 GiB)  TX bytes:2597741144 (2.4 GiB)
+
+myshell> netstat - -r#&$(*^%
+netstat: invalid option -- '#'
+usage: netstat [-veenNcCF] [<Af>] -r         netstat {-V|--version|-h|--help}
+       netstat [-vnNcaeol] [<Socket> ...]
+       netstat { [-veenNac] -I[<Iface>] | [-veenNac] -i | [-cnNe] -M | -s } [delay]
+
+        -r, --route                display routing table
+        -I, --interfaces=<Iface>   display interface table for <Iface>
+        -i, --interfaces           display interface table
+        -g, --groups               display multicast group memberships
+        -s, --statistics           display networking statistics (like SNMP)
+        -M, --masquerade           display masqueraded connections
+
+        -v, --verbose              be verbose
+        -n, --numeric              don't resolve names
+        --numeric-hosts            don't resolve host names
+        --numeric-ports            don't resolve port names
+        --numeric-users            don't resolve user names
+        -N, --symbolic             resolve hardware names
+        -e, --extend               display other/more information
+        -p, --programs             display PID/Program name for sockets
+        -c, --continuous           continuous listing
+
+        -l, --listening            display listening server sockets
+        -a, --all, --listening     display all sockets (default: connected)
+        -o, --timers               display timers
+        -F, --fib                  display Forwarding Information Base (default)
+        -C, --cache                display routing cache instead of FIB
+        -T, --notrim               stop trimming long addresses
+        -Z, --context              display SELinux security context for sockets
+
+  <Iface>: Name of interface to monitor/list.
+  <Socket>={-t|--tcp} {-u|--udp} {-S|--sctp} {-w|--raw} {-x|--unix} --ax25 --ipx --netrom
+  <AF>=Use '-A <af>' or '--<af>'; default: inet
+  List of possible address families (which support routing):
+    inet (DARPA Internet) inet6 (IPv6) ax25 (AMPR AX.25) 
+    netrom (AMPR NET/ROM) ipx (Novell IPX) ddp (Appletalk DDP) 
+    x25 (CCITT X.25) 
+myshell> whoami
+cal0018
+myshell> host
+Usage: host [-aCdlriTwv] [-c class] [-N ndots] [-t type] [-W time]
+            [-R number] [-m flag] hostname [server]
+       -a is equivalent to -v -t ANY
+       -c specifies query class for non-IN data
+       -C compares SOA records on authoritative nameservers
+       -d is equivalent to -v
+       -l lists all hosts in a domain, using AXFR
+       -i IP6.INT reverse lookups
+       -N changes the number of dots allowed before root lookup is done
+       -r disables recursive processing
+       -R specifies number of retries for UDP packets
+       -s a SERVFAIL response should stop query
+       -t specifies the query type
+       -T enables TCP/IP mode
+       -v enables verbose output
+       -w specifies to wait forever for a reply
+       -W specifies how long to wait for a reply
+       -4 use IPv4 query transport only
+       -6 use IPv6 query transport only
+       -m set memory debugging flag (trace|record|usage)
+myshell> arch
+x86_64
+myshell> h456Jg  HUG$$&## kjewb@#%% iweb^@*^#
+Error: invalid command.
+myshell> whoami eu34b^*@hj
+whoami: extra operand `eu34b^*@hj'
+Try `whoami --help' for more information.
+myshell> netstat -r
+Kernel IP routing table
+Destination     Gateway         Genmask         Flags   MSS Window  irtt Iface
+131.204.14.0    *               255.255.255.0   U         0 0          0 eth0
+link-local      *               255.255.0.0     U         0 0          0 eth0
+default         131.204.14.1    0.0.0.0         UG        0 0          0 eth0
+myshell> chmod 700 comp3500test
+myshell> date
+Mon Jun 24 18:23:31 CDT 2013
+myshell> echo there's no place like home
+there's no place like home
+myshell> cp -r comp3500test comp3500test-dup
+myshell> pwd -L
+/home/u2/cal0018/Documents/shellproject
+myshell> more -p /etc/hosts
+[H[2J127.0.0.1	localhost
+::1	localhost
+131.204.14.194	tux194.eng.auburn.edu tux194
+131.204.12.6	leaky leaky.eng.auburn.edu
+131.204.12.67	dragonfly dragonfly.eng.auburn.edu
+131.204.12.115	edison2	edison2.eng.auburn.edu
+myshell> man -k router
+jabberd_router_selinux (8)  - Security Enhanced Linux Policy for the jabberd_router processes
+rdisc                (8)  - network router discovery daemon
+myshell> chmod 0 o-744 comp3500test.dup    -dup
+chmod: invalid mode: `o-744'
+Try `chmod --help' for more information.
+myshell> clear
+[H[2Jmyshell> ifconfig
+eth0      Link encap:Ethernet  HWaddr A0:B3:CC:FC:85:6C  
+          inet addr:131.204.14.194  Bcast:131.204.14.255  Mask:255.255.255.0
+          inet6 addr: fe80::a2b3:ccff:fefc:856c/64 Scope:Link
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:25776708 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:16333964 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:7286150158 (6.7 GiB)  TX bytes:4026653596 (3.7 GiB)
+          Interrupt:20 Memory:fe400000-fe420000 
+
+lo        Link encap:Local Loopback  
+          inet addr:127.0.0.1  Mask:255.0.0.0
+          inet6 addr: ::1/128 Scope:Host
+          UP LOOPBACK RUNNING  MTU:16436  Metric:1
+          RX packets:15260660 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:15260660 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:0 
+          RX bytes:2597741144 (2.4 GiB)  TX bytes:2597741144 (2.4 GiB)
+
+myshell> ^^?  kjherkerewwinrpijernkd ekeiifjeijfoijeoifjwn9@##$##  nicubriuy$%
+Error: invalid command.
+myshell> apropos ifocn   config
+ifcfg                (8)  - simplistic script which replaces ifconfig IP managment
+ifconfig             (8)  - configure a network interface
+ifconfig_selinux     (8)  - Security Enhanced Linux Policy for the ifconfig processes
+pifconfig            (8)  - display information about a network interface
+myshell> du -la
+6	./myshell.c
+1	./myshell.h
+194	./myshell
+0	./testResults.txt
+0	./comp3500test
+32	./testFile.txt
+0	./comp3500test-dup
+234	.
+myshell> df -ai
+Filesystem            Inodes   IUsed   IFree IUse% Mounted on
+/dev/mapper/vg_root-lv_root
+                     30253056  262233 29990823    1% /
+proc                       0       0       0    -  /proc
+sysfs                      0       0       0    -  /sys
+devpts                     0       0       0    -  /dev/pts
+tmpfs                 993108      12  993096    1% /dev/shm
+/dev/sda1             128016      66  127950    1% /boot
+none                       0       0       0    -  /proc/sys/fs/binfmt_misc
+sunrpc                     0       0       0    -  /var/lib/nfs/rpc_pipefs
+creos:/export/linux_apps
+                     4284472 3037165 1247307   71% /linux_apps
+homedir:/export/new-ece
+                      626972  617272    9700   99% /home/new-ece
+homedir2:/export/u2  33807476  390753 33416723    2% /home/u2
+myshell> ps uf gx
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+cal0018  20579  0.0  0.0 102060  2100 ?        S    18:16   0:00 sshd: cal0018@pts/2
+cal0018  20580  0.0  0.0 114760  2000 pts/2    Ss   18:16   0:00 -bash
+cal0018  20620  0.0  0.0 113440   900 pts/2    S+   18:18   0:00 script testFile.txt
+cal0018  20622  0.0  0.0 114464   448 pts/2    S+   18:18   0:00 script testFile.txt
+cal0018  20623  0.0  0.0 114656  1812 pts/3    Ss   18:18   0:00 bash -i
+cal0018  20624  0.0  0.0   4060   480 pts/3    S+   18:18   0:00 ./myshell
+cal0018  20784  9.0  0.0 116564  1328 pts/3    R+   18:27   0:00 ps ugx
+myshell> ps -aux test
+ERROR: User name does not exist.
+********* simple selection *********  ********* selection by list *********
+-A all processes                      -C by command name
+-N negate selection                   -G by real group ID (supports names)
+-a all w/ tty except session leaders  -U by real user ID (supports names)
+-d all except session leaders         -g by session OR by effective group name
+-e all processes                      -p by process ID
+T  all processes on this terminal     -s processes in the sessions given
+a  all w/ tty, including other users  -t by tty
+g  OBSOLETE -- DO NOT USE             -u by effective user ID (supports names)
+r  only running processes             U  processes for specified users
+x  processes w/o controlling ttys     t  by tty
+*********** output format **********  *********** long options ***********
+-o,o user-defined  -f full            --Group --User --pid --cols --ppid
+-j,j job control   s  signal          --group --user --sid --rows --info
+-O,O preloaded -o  v  virtual memory  --cumulative --format --deselect
+-l,l long          u  user-oriented   --sort --tty --forest --version
+-F   extra full    X  registers       --heading --no-heading --context
+                    ********* misc options *********
+-V,V  show version      L  list format codes  f  ASCII art forest
+-m,m,-L,-T,H  threads   S  children in sum    -y change -l format
+-M,Z  security data     c  true command name  -c scheduling class
+-w,w  wide output       n  numeric WCHAN,UID  -H process hierarchy
+myshell> uptime
+ 18:28:09 up 38 days,  8:56,  3 users,  load average: 1026.40, 1026.31, 1026.16
+myshell> w -u
+ 18:28:17 up 38 days,  8:56,  3 users,  load average: 1026.42, 1026.32, 1026.16
+USER     TTY      FROM              LOGIN@   IDLE   JCPU   PCPU WHAT
+szg0034  pts/0    ettin.eng.auburn 14:45    3:42m  0.01s  0.01s -bash
+cal0018  pts/2    ettin.eng.auburn 18:16    6.00s  0.02s  0.00s script testFile.txt
+cal0018  pts/3    -                18:18    6.00s  0.03s  0.00s ./myshell
+myshell> du who df
+du: cannot access `who': No such file or directory
+du: cannot access `df': No such file or directory
+myshell> rmdir comp3500test
+myshell> rmdir comp3500test-dup
+myshell> exit
+bash-4.1$ exit
+exit
+
+Script done on Mon 24 Jun 2013 06:28:47 PM CDT
